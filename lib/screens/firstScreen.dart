@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import'package:kidszone/models/urlModel.dart';
+import 'package:kidszone/models/urlModel.dart';
 import 'package:ionicons/ionicons.dart';
+
 class MainPage extends StatefulWidget {
   MainPage({Key? key}) : super(key: key);
 
@@ -39,93 +40,108 @@ class _MainPageState extends State<MainPage> {
           ),
           body: TabBarView(
             children: [
-              Container(
-                padding: EdgeInsets.all(20),
-                child: Column(
-                  children: [
-                    Text(
-                      "WELCOME",
-                      style:
-                          TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Text(
-                      "our beautiful children,",
-                      style: TextStyle(
-                          fontSize: 25,
-                          fontWeight: FontWeight.bold,
-                          color: Color.fromARGB(255, 236, 94, 94)),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Text(
-                      "Let's start the fun together ",
-                      style: TextStyle(
-                          fontSize: 25,
-                          fontWeight: FontWeight.bold,
-                          color: Color.fromARGB(255, 117, 162, 244)),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Text(
-                      "We will learn about  ",
-                      style: TextStyle(
-                          fontSize: 25,
-                          fontWeight: FontWeight.bold,
-                          color: Color.fromARGB(255, 255, 140, 0)),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Card(
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(15)),
-                      child: Column(
-                        children: [
-                          Image.asset(
-                            "images/abc.png",
-                            width: 150,
-                          ),
-                          SizedBox(
-                            height: 10,
-                          ),
-                          Text(
-                            "Letters",
-                            style: TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ],
+              SingleChildScrollView(
+                child: Container(
+                  padding: EdgeInsets.all(20),
+                  child: Column(
+                    children: [
+                      Text(
+                        "WELCOME",
+                        style: TextStyle(
+                            fontSize: 15, fontWeight: FontWeight.bold),
                       ),
-                    ),
-                    Card(
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(15)),
-                      child: Column(
-                        children: [
-                          Image.asset(
-                            "images/shapes.png",
-                            width: 150,
-                          ),
-                          SizedBox(
-                            height: 10,
-                          ),
-                          Text(
-                            "Shapes",
-                            style: TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ],
+                      SizedBox(
+                        height: 10,
                       ),
-                    )
-                  ],
+                      Text(
+                        "our beautiful children,",
+                        style: TextStyle(
+                            fontSize: 25,
+                            fontWeight: FontWeight.bold,
+                            color: Color.fromARGB(255, 236, 94, 94)),
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        "Let's start the fun together ",
+                        style: TextStyle(
+                            fontSize: 25,
+                            fontWeight: FontWeight.bold,
+                            color: Color.fromARGB(255, 117, 162, 244)),
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        "We will learn about : ",
+                        style: TextStyle(
+                            fontSize: 25,
+                            fontWeight: FontWeight.bold,
+                            color: Color.fromARGB(255, 255, 140, 0)),
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Container(
+                        width: 180,
+                        height: 200,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(15),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.asset(
+                              "images/abc.png",
+                              width: 150,
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            Text(
+                              "Letters",
+                              style: TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Container(
+                        width: 180,
+                        height: 200,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(15),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.asset(
+                              "images/shapes.png",
+                              width: 150,
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            Text(
+                              "Shapes",
+                              style: TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               ),
               SingleChildScrollView(
@@ -285,7 +301,8 @@ class _MainPageState extends State<MainPage> {
                                   style: TextStyle(
                                       fontSize: 20,
                                       fontWeight: FontWeight.bold,
-                                      color: Color.fromARGB(255, 31, 75, 118)),
+                                      color:
+                                          Color.fromARGB(255, 130, 184, 237)),
                                 ),
                               ],
                             ),
@@ -311,7 +328,7 @@ class _MainPageState extends State<MainPage> {
                                   style: TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.bold,
-                                      color: Color.fromARGB(255, 255, 162, 2)),
+                                      color: Color.fromARGB(255, 12, 104, 29)),
                                 ),
                               ],
                             ),
@@ -355,11 +372,11 @@ class _MainPageState extends State<MainPage> {
                                   height: 5,
                                 ),
                                 Text(
-                                  "(APPLE)",
+                                  "APPLE",
                                   style: TextStyle(
                                       fontSize: 20,
                                       fontWeight: FontWeight.bold,
-                                      color: Color.fromARGB(255, 3, 82, 5)),
+                                      color: Color.fromARGB(255, 40, 240, 47)),
                                 ),
                               ],
                             ),
@@ -381,11 +398,11 @@ class _MainPageState extends State<MainPage> {
                                   height: 5,
                                 ),
                                 Text(
-                                  "(BEE)",
+                                  "BEE",
                                   style: TextStyle(
                                       fontSize: 20,
                                       fontWeight: FontWeight.bold,
-                                      color: Color.fromARGB(255, 164, 9, 3)),
+                                      color: Color.fromARGB(255, 255, 242, 1)),
                                 ),
                               ],
                             ),
@@ -415,11 +432,11 @@ class _MainPageState extends State<MainPage> {
                                   height: 5,
                                 ),
                                 Text(
-                                  "(CAR)",
+                                  "CAR",
                                   style: TextStyle(
                                       fontSize: 20,
                                       fontWeight: FontWeight.bold,
-                                      color: Color.fromARGB(255, 31, 75, 118)),
+                                      color: Color.fromARGB(255, 255, 145, 0)),
                                 ),
                               ],
                             ),
@@ -441,11 +458,11 @@ class _MainPageState extends State<MainPage> {
                                   height: 5,
                                 ),
                                 Text(
-                                  "(DOOR)",
+                                  "DOOR",
                                   style: TextStyle(
                                       fontSize: 20,
                                       fontWeight: FontWeight.bold,
-                                      color: Color.fromARGB(255, 255, 162, 2)),
+                                      color: Color.fromARGB(255, 126, 81, 2)),
                                 ),
                               ],
                             ),
@@ -475,11 +492,11 @@ class _MainPageState extends State<MainPage> {
                                   height: 5,
                                 ),
                                 Text(
-                                  "(EGG)",
+                                  "EGG",
                                   style: TextStyle(
                                       fontSize: 20,
                                       fontWeight: FontWeight.bold,
-                                      color: Color.fromARGB(255, 31, 75, 118)),
+                                      color: Color.fromARGB(255, 255, 213, 0)),
                                 ),
                               ],
                             ),
@@ -501,11 +518,11 @@ class _MainPageState extends State<MainPage> {
                                   height: 5,
                                 ),
                                 Text(
-                                  "(FOOTBALL)",
+                                  "FOOTBALL",
                                   style: TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.bold,
-                                      color: Color.fromARGB(255, 255, 162, 2)),
+                                      color: Color.fromARGB(255, 3, 42, 105)),
                                 ),
                               ],
                             ),
@@ -522,16 +539,16 @@ class _MainPageState extends State<MainPage> {
                   children: [
                     URL(
                       OnTapping: UrlFacebook,
-                    platformTitle: "Facebook",
-                    platformSubtitle: "follow us",
-                    platformIcon: Ionicons.logo_facebook,
-                  ),
-                  URL(
-                    OnTapping:makingPhoneCall, 
-                    platformTitle: "Call us",
-                    platformSubtitle: "+962796537882",
-                    platformIcon: Ionicons.call,
-                  ),
+                      platformTitle: "Facebook",
+                      platformSubtitle: "follow us",
+                      platformIcon: Ionicons.logo_facebook,
+                    ),
+                    URL(
+                      OnTapping: makingPhoneCall,
+                      platformTitle: "Call us",
+                      platformSubtitle: "+962796537882",
+                      platformIcon: Ionicons.call,
+                    ),
                   ],
                 ),
               )
